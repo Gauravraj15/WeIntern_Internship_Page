@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WeIntern – Empowering Student Careers</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ========== NAVBAR ========== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <div class="nav-logo">
+        <img src="image.png" alt="WeIntern Logo" class="logo-img"
+             onerror="this.style.display='none'; document.getElementById('logo-text').style.display='inline-block'" />
+        <span class="logo-text" id="logo-text">We<span class="gold">Intern</span></span>
+      </div>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#internship">Tracks</a></li>
+        <li><a href="#cta" class="nav-cta">Apply Now</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ========== HERO SECTION ========== -->
+  <section class="hero" id="hero">
+    <div class="hero-shapes">
+      <div class="shape s1"></div>
+      <div class="shape s2"></div>
+      <div class="shape s3"></div>
+    </div>
+    <div class="hero-inner">
+      <div class="hero-content">
+        <div class="badge">🚀 Now Accepting Applications – 2026</div>
+        <h1>Empowering <span class="gold">Student Careers</span></h1>
+        <p class="hero-sub">Get real-world startup experience through hands-on internship programs in AI, Data Science, and Web Development.</p>
+        <div class="hero-btns">
+          <a href="#cta" class="btn btn-primary">Apply Now</a>
+          <a href="#about" class="btn btn-outline">Learn More</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat">
+            <span class="stat-num">500+</span>
+            <span class="stat-label">Students Placed</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <span class="stat-num">3</span>
+            <span class="stat-label">Tracks Available</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <span class="stat-num">100%</span>
+            <span class="stat-label">Hands-on Learning</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-cards-side">
+        <div class="hero-card floating">
+          <div class="hcard-icon">🤖</div>
+          <div>
+            <div class="hcard-title">AI Intern</div>
+            <div class="hcard-sub">Prompt Engineering & GenAI</div>
+          </div>
+        </div>
+        <div class="hero-card floating delay1">
+          <div class="hcard-icon">📊</div>
+          <div>
+            <div class="hcard-title">Data Science</div>
+            <div class="hcard-sub">Analytics & Visualization</div>
+          </div>
+        </div>
+        <div class="hero-card floating delay2">
+          <div class="hcard-icon">💻</div>
+          <div>
+            <div class="hcard-title">Web Dev</div>
+            <div class="hcard-sub">Full Stack Development</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== ABOUT SECTION ========== -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="section-tag">Who We Are</div>
+      <h2 class="section-title">Built for Students, <span class="gold">By Builders</span></h2>
+      <p class="section-sub">WeIntern connects ambitious students with real startup tasks — no busywork, just real impact.</p>
+      <div class="about-grid">
+        <div class="about-text">
+          <div class="about-block">
+            <h3>🎯 Our Mission</h3>
+            <p>Empower students with real-world startup experience, practical skills, and career opportunities through hands-on internship programs.</p>
+          </div>
+          <div class="about-block">
+            <h3>🌟 Our Vision</h3>
+            <p>Build the #1 platform that connects students with innovative startups and opportunities across India and beyond.</p>
+          </div>
+          <div class="about-block">
+            <h3>💡 What We Offer</h3>
+            <p>Live projects, daily mentorship, domain learning, and a professional internship certificate upon completion.</p>
+          </div>
+        </div>
+        <div class="value-cards">
+          <div class="vcard">
+            <div class="vcard-icon">🏆</div>
+            <h4>Real Projects</h4>
+            <p>Work on actual startup tasks that create real value — not dummy exercises.</p>
+          </div>
+          <div class="vcard">
+            <div class="vcard-icon">🧠</div>
+            <h4>Skill Building</h4>
+            <p>Learn industry-relevant skills across AI, data, and web development.</p>
+          </div>
+          <div class="vcard">
+            <div class="vcard-icon">📜</div>
+            <h4>Certificate</h4>
+            <p>Earn a verified completion certificate to boost your resume and LinkedIn.</p>
+          </div>
+          <div class="vcard">
+            <div class="vcard-icon">🤝</div>
+            <h4>Mentorship</h4>
+            <p>Get guided by experienced professionals and startup founders.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== INTERNSHIP TRACKS SECTION ========== -->
+  <section class="internship" id="internship">
+    <div class="container">
+      <div class="section-tag">Our Programs</div>
+      <h2 class="section-title">Choose Your <span class="gold">Track</span></h2>
+      <p class="section-sub">Three specialized domains designed to give you real startup experience from Day 1.</p>
+      <div class="tracks-grid">
+
+        <!-- AI Track -->
+        <div class="track-card">
+          <div class="track-header blue-bg">
+            <div class="track-emoji">🤖</div>
+            <h3>AI Intern</h3>
+          </div>
+          <div class="track-body">
+            <ul>
+              <li>✅ Generative AI & Prompt Engineering</li>
+              <li>✅ AI Tools for Businesses</li>
+              <li>✅ Content Creation with AI</li>
+              <li>✅ Real startup AI tasks</li>
+            </ul>
+            <div class="track-meta">
+              <span>⏱ 3 to 6 Months</span>
+              <span>🎓 All Levels</span>
+            </div>
+            <a href="#cta" class="btn btn-primary track-btn">Apply for AI Track</a>
+          </div>
+        </div>
+
+        <!-- Data Science Track -->
+        <div class="track-card">
+          <div class="track-header dark-bg">
+            <div class="track-emoji">📊</div>
+            <h3>Data Science Intern</h3>
+          </div>
+          <div class="track-body">
+            <ul>
+              <li>✅ Data Cleaning & Analysis</li>
+              <li>✅ Visualization with Charts</li>
+              <li>✅ Insight Generation</li>
+              <li>✅ Public dataset projects</li>
+            </ul>
+            <div class="track-meta">
+              <span>⏱ 3 to 6 Months</span>
+              <span>🎓 Beginner Friendly</span>
+            </div>
+            <a href="#cta" class="btn btn-primary track-btn">Apply for Data Track</a>
+          </div>
+        </div>
+
+        <!-- Web Dev Track -->
+        <div class="track-card">
+          <div class="track-header gold-bg">
+            <div class="track-emoji">💻</div>
+            <h3>Web Dev Intern</h3>
+          </div>
+          <div class="track-body">
+            <ul>
+              <li>✅ HTML, CSS & JavaScript</li>
+              <li>✅ Responsive Design</li>
+              <li>✅ Build Real Webpages</li>
+              <li>✅ GitHub & Deployment</li>
+            </ul>
+            <div class="track-meta">
+              <span>⏱ 3 to 6 Months</span>
+              <span>🎓 Beginner to Pro</span>
+            </div>
+            <a href="#cta" class="btn btn-primary track-btn">Apply for Web Track</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CTA SECTION ========== -->
+  <section class="cta-section" id="cta">
+    <div class="cta-shapes">
+      <div class="cta-shape c1"></div>
+      <div class="cta-shape c2"></div>
+    </div>
+    <div class="container cta-inner">
+      <h2>Ready to Start Your <span class="gold">Internship Journey?</span></h2>
+      <p>Join hundreds of students who are building real skills and real careers at WeIntern.</p>
+      <form class="apply-form" id="apply-form">
+        <input type="text" id="name" placeholder="Your Full Name" required />
+        <input type="email" id="email" placeholder="Your Email Address" required />
+        <select id="track" required>
+          <option value="" disabled selected>Select Your Track</option>
+          <option value="ai">AI Intern</option>
+          <option value="data">Data Science Intern</option>
+          <option value="webdev">Full Stack Web Dev Intern</option>
+        </select>
+        <button type="submit" class="btn btn-primary cta-submit">Get Started →</button>
+      </form>
+      <div class="success-msg" id="success-msg">
+        🎉 Thank you! We'll get in touch with you soon. Welcome to WeIntern!
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-logo">
+        <img src="image.png" alt="WeIntern Logo" class="footer-logo-img"
+             onerror="this.style.display='none'; document.getElementById('footer-logo-text').style.display='inline-block'" />
+        <span id="footer-logo-text" class="logo-text">We<span class="gold">Intern</span></span>
+      </div>
+      <p class="footer-tagline">Empowering Student Careers · weintern.in</p>
+      <div class="footer-links">
+        <a href="#hero">Home</a>
+        <a href="#about">About</a>
+        <a href="#internship">Tracks</a>
+        <a href="#cta">Apply</a>
+      </div>
+      <p class="footer-copy">© 2026 WeIntern. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
