@@ -2,11 +2,13 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>WeIntern – Empowering Student Careers</title>
-  <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes" />
+  <title>WeIntern – Empower Your Career with Real Startup Internships</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <!-- Boxicons -->
   <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
@@ -14,376 +16,94 @@
   <nav class="navbar" id="navbar">
     <div class="nav-container">
       <div class="nav-logo">
-        <img src="image.png" alt="WeIntern Logo" class="logo-img"
-             onerror="this.style.display='none';document.getElementById('logo-text').style.display='inline-block'" />
-        <span class="logo-text" id="logo-text">We<span class="gold">Intern</span></span>
+        <span class="logo-text">We<span class="gold">Intern</span></span>
       </div>
       <ul class="nav-links" id="nav-links">
-        <li><a href="#hero"         class="nav-link">Home</a></li>
-        <li><a href="#about"        class="nav-link">About</a></li>
-        <li><a href="#internship"   class="nav-link">Tracks</a></li>
+        <li><a href="#hero" class="nav-link">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#internship" class="nav-link">Tracks</a></li>
         <li><a href="#testimonials" class="nav-link">Reviews</a></li>
-        <li><a href="#skills"       class="nav-link">Skills</a></li>
-        <li><a href="#contact"      class="nav-link">Contact</a></li>
-        <li><a href="#cta"          class="nav-cta">Apply Now</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+        <li><a href="#cta" class="nav-cta btn btn-primary">Apply Now</a></li>
       </ul>
       <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
     </div>
   </nav>
-
-  <!-- Mobile menu overlay -->
   <div class="nav-overlay" id="nav-overlay"></div>
 
   <!-- ========== HERO SECTION ========== -->
   <section class="hero" id="hero">
-    <div class="hero-shapes">
-      <div class="shape s1"></div>
-      <div class="shape s2"></div>
-      <div class="shape s3"></div>
-    </div>
+    <div class="hero-bg-grid"></div>
+    <div class="hero-glow g1"></div>
+    <div class="hero-glow g2"></div>
     <div class="hero-inner">
       <div class="hero-content" data-reveal>
-        <div class="urgency-badge">🔥 Free for First 50 Students — Limited Seats Left!</div>
-        <h1>Empowering <span class="gold">Student<br>Careers</span></h1>
+        <div class="urgency-badge">
+          <span class="badge-dot"></span>
+          🔥 Free for First 50 Students — Limited Seats Left!
+        </div>
+        <h1>Empowering <span class="gold gradient-text">Student<br>Careers</span></h1>
         <p class="hero-sub">Get real-world startup experience through hands-on internship programs in AI, Data Science, and Web Development. Start today — no experience needed.</p>
         <div class="hero-btns">
-          <a href="#cta"        class="btn btn-primary pulse">Apply Now →</a>
+          <a href="#cta" class="btn btn-primary pulse">Apply Now →</a>
           <a href="#internship" class="btn btn-outline">Start Learning</a>
         </div>
         <div class="hero-trust">
-          <span>✅ Free Certificate</span>
-          <span>✅ Real Projects</span>
-          <span>✅ Startup Experience</span>
+          <span><i class='bx bx-check-circle'></i> Free Certificate</span>
+          <span><i class='bx bx-check-circle'></i> Real Projects</span>
+          <span><i class='bx bx-check-circle'></i> Startup Experience</span>
         </div>
         <div class="hero-stats">
-          <div class="stat"><span class="stat-num">500+</span><span class="stat-label">Students Placed</span></div>
+          <div class="stat"><span class="stat-num counter" data-target="500">0</span><span class="stat-num">+</span><span class="stat-label">Students Placed</span></div>
           <div class="stat-divider"></div>
-          <div class="stat"><span class="stat-num">6</span><span class="stat-label">Domains Available</span></div>
+          <div class="stat"><span class="stat-num counter" data-target="6">0</span><span class="stat-label">Domains Available</span></div>
           <div class="stat-divider"></div>
-          <div class="stat"><span class="stat-num">100%</span><span class="stat-label">Hands-on Learning</span></div>
+          <div class="stat"><span class="stat-num counter" data-target="100">0</span><span class="stat-num">%</span><span class="stat-label">Hands-on Learning</span></div>
         </div>
       </div>
       <div class="hero-cards-side">
-        <div class="hero-card floating" data-reveal>
-          <div class="hcard-icon">🤖</div>
-          <div><div class="hcard-title">AI Intern</div><div class="hcard-sub">Prompt Engineering & GenAI</div></div>
-        </div>
-        <div class="hero-card floating delay1" data-reveal>
-          <div class="hcard-icon">📊</div>
-          <div><div class="hcard-title">Data Science</div><div class="hcard-sub">Analytics & Visualization</div></div>
-        </div>
-        <div class="hero-card floating delay2" data-reveal>
-          <div class="hcard-icon">💻</div>
-          <div><div class="hcard-title">Web Dev</div><div class="hcard-sub">Full Stack Development</div></div>
-        </div>
+        <div class="hero-card floating" data-reveal><div class="hcard-icon ai-icon">🤖</div><div><div class="hcard-title">AI Intern</div><div class="hcard-sub">Prompt Engineering & GenAI</div></div><div class="hcard-badge">Hot</div></div>
+        <div class="hero-card floating delay1" data-reveal><div class="hcard-icon data-icon">📊</div><div><div class="hcard-title">Data Science</div><div class="hcard-sub">Analytics & Visualization</div></div></div>
+        <div class="hero-card floating delay2" data-reveal><div class="hcard-icon web-icon">💻</div><div><div class="hcard-title">Web Dev</div><div class="hcard-sub">Full Stack Development</div></div></div>
       </div>
     </div>
+    <div class="scroll-indicator"><div class="scroll-mouse"><div class="scroll-wheel"></div></div><span>Scroll to explore</span></div>
   </section>
 
-  <!-- ========== ABOUT SECTION ========== -->
-  <section class="about" id="about">
-    <div class="container">
-      <div class="section-tag" data-reveal>Who We Are</div>
-      <h2 class="section-title" data-reveal>Built for Students, <span class="gold">By Builders</span></h2>
-      <p class="section-sub" data-reveal>WeIntern connects ambitious students with real startup tasks — no busywork, just real impact from Day 1.</p>
-      <div class="about-grid">
-        <div class="about-text" data-reveal>
-          <div class="about-block">
-            <h3>🎯 Our Mission</h3>
-            <p>Empower students with real-world startup experience, practical skills, and career opportunities through hands-on internship programs.</p>
-          </div>
-          <div class="about-block">
-            <h3>🌟 Our Vision</h3>
-            <p>Build the #1 platform that connects students with innovative startups across India and beyond.</p>
-          </div>
-          <div class="about-block">
-            <h3>💡 What We Offer</h3>
-            <p>Live projects, daily mentorship, domain learning, and a professional internship certificate upon completion.</p>
-          </div>
-          <a href="#cta" class="btn btn-primary">Join WeIntern Free →</a>
-        </div>
-        <div class="value-cards">
-          <div class="vcard" data-reveal><div class="vcard-icon">🏆</div><h4>Real Projects</h4><p>Work on actual startup tasks that create real value.</p></div>
-          <div class="vcard" data-reveal><div class="vcard-icon">🧠</div><h4>Skill Building</h4><p>Learn industry-relevant skills across AI, data, and web dev.</p></div>
-          <div class="vcard" data-reveal><div class="vcard-icon">📜</div><h4>Certificate</h4><p>Earn a verified certificate to boost your resume and LinkedIn.</p></div>
-          <div class="vcard" data-reveal><div class="vcard-icon">🤝</div><h4>Mentorship</h4><p>Get guided by experienced professionals and startup founders.</p></div>
-        </div>
-      </div>
-    </div>
-  </section>
+  <!-- ========== MARQUEE ========== -->
+  <div class="marquee-strip"><div class="marquee-track"><span>🏆 Real Projects</span><span>🎓 Free Certificate</span><span>🚀 Startup Experience</span><span>💡 AI & Web Dev</span><span>📊 Data Science</span><span>🤝 Mentorship</span><span>☁️ Cloud & DevOps</span><span>🎨 UI/UX Design</span><span>📱 Digital Marketing</span><span>⚡ 30-Day Programs</span><span>🏆 Real Projects</span><span>🎓 Free Certificate</span></div></div>
 
-  <!-- ========== INTERNSHIP DOMAIN CARDS ========== -->
-  <section class="internship" id="internship">
-    <div class="container">
-      <div class="section-tag" data-reveal>Our Programs</div>
-      <h2 class="section-title" data-reveal>Choose Your <span class="gold">Domain</span></h2>
-      <p class="section-sub" data-reveal>Six specialized domains designed to give you real startup experience from Day 1.</p>
-      <div class="tracks-grid">
-        <div class="track-card" data-reveal>
-          <div class="track-header blue-bg"><div class="track-emoji">🤖</div><h3>AI Intern</h3></div>
-          <div class="track-body">
-            <ul><li>✅ Generative AI & Prompt Engineering</li><li>✅ AI Tools for Businesses</li><li>✅ Content Creation with AI</li><li>✅ Real startup AI tasks</li></ul>
-            <div class="track-meta"><span>⏱ 30 Days</span><span>🎓 All Levels</span></div>
-            <a href="#cta" class="btn btn-primary track-btn">Apply for AI Track</a>
-          </div>
-        </div>
-        <div class="track-card" data-reveal>
-          <div class="track-header dark-bg"><div class="track-emoji">📊</div><h3>Data Science Intern</h3></div>
-          <div class="track-body">
-            <ul><li>✅ Data Cleaning & Analysis</li><li>✅ Visualization with Charts</li><li>✅ Insight Generation</li><li>✅ Public dataset projects</li></ul>
-            <div class="track-meta"><span>⏱ 30 Days</span><span>🎓 Beginner Friendly</span></div>
-            <a href="#cta" class="btn btn-primary track-btn">Apply for Data Track</a>
-          </div>
-        </div>
-        <div class="track-card" data-reveal>
-          <div class="track-header gold-bg"><div class="track-emoji">💻</div><h3>Web Dev Intern</h3></div>
-          <div class="track-body">
-            <ul><li>✅ HTML, CSS & JavaScript</li><li>✅ Responsive Design</li><li>✅ Build Real Webpages</li><li>✅ GitHub & Deployment</li></ul>
-            <div class="track-meta"><span>⏱ 30 Days</span><span>🎓 Beginner to Mid</span></div>
-            <a href="#cta" class="btn btn-primary track-btn">Apply for Web Track</a>
-          </div>
-        </div>
-        <div class="track-card" data-reveal>
-          <div class="track-header green-bg"><div class="track-emoji">📱</div><h3>Digital Marketing</h3></div>
-          <div class="track-body">
-            <ul><li>✅ Social Media Strategy</li><li>✅ SEO & Content Marketing</li><li>✅ Email Campaigns</li><li>✅ Growth Hacking</li></ul>
-            <div class="track-meta"><span>⏱ 30 Days</span><span>🎓 All Levels</span></div>
-            <a href="#cta" class="btn btn-primary track-btn">Apply for Marketing</a>
-          </div>
-        </div>
-        <div class="track-card" data-reveal>
-          <div class="track-header purple-bg"><div class="track-emoji">🎨</div><h3>UI/UX Design</h3></div>
-          <div class="track-body">
-            <ul><li>✅ Figma & Design Tools</li><li>✅ User Research & Wireframes</li><li>✅ Prototyping & Testing</li><li>✅ Real app design tasks</li></ul>
-            <div class="track-meta"><span>⏱ 30 Days</span><span>🎓 Creative Minds</span></div>
-            <a href="#cta" class="btn btn-primary track-btn">Apply for UI/UX</a>
-          </div>
-        </div>
-        <div class="track-card" data-reveal>
-          <div class="track-header teal-bg"><div class="track-emoji">☁️</div><h3>Cloud & DevOps</h3></div>
-          <div class="track-body">
-            <ul><li>✅ AWS / GCP Basics</li><li>✅ Docker & Containers</li><li>✅ CI/CD Pipelines</li><li>✅ Deploy real apps</li></ul>
-            <div class="track-meta"><span>⏱ 30 Days</span><span>🎓 Intermediate</span></div>
-            <a href="#cta" class="btn btn-primary track-btn">Apply for DevOps</a>
-          </div>
-        </div>
-      </div>
-      <div class="section-cta" data-reveal>
-        <p class="urgency-text">🚀 Limited Seats Available — Don't Miss Out!</p>
-        <a href="#cta" class="btn btn-primary btn-lg">Start Learning Today →</a>
-      </div>
-    </div>
-  </section>
+  <!-- ========== ABOUT ========== -->
+  <section class="about" id="about"><div class="container"><div class="section-tag" data-reveal>Who We Are</div><h2 class="section-title" data-reveal>Built for Students, <span class="gold">By Builders</span></h2><p class="section-sub" data-reveal>WeIntern connects ambitious students with real startup tasks — no busywork, just real impact from Day 1.</p><div class="about-grid"><div class="about-text" data-reveal><div class="about-block"><div class="about-icon">🎯</div><div><h3>Our Mission</h3><p>Empower students with real-world startup experience, practical skills, and career opportunities.</p></div></div><div class="about-block"><div class="about-icon">🌟</div><div><h3>Our Vision</h3><p>Build the #1 platform connecting students with innovative startups across India.</p></div></div><div class="about-block"><div class="about-icon">💡</div><div><h3>What We Offer</h3><p>Live projects, daily mentorship, domain learning, and professional certificate upon completion.</p></div></div><a href="#cta" class="btn btn-primary">Join WeIntern Free →</a></div><div class="value-cards"><div class="vcard" data-reveal><div class="vcard-icon-wrap blue-wrap"><div class="vcard-icon">🏆</div></div><h4>Real Projects</h4><p>Work on actual startup tasks that build your portfolio.</p></div><div class="vcard" data-reveal><div class="vcard-icon-wrap gold-wrap"><div class="vcard-icon">🧠</div></div><h4>Skill Building</h4><p>Learn industry-relevant skills employers want.</p></div><div class="vcard" data-reveal><div class="vcard-icon-wrap green-wrap"><div class="vcard-icon">📜</div></div><h4>Certificate</h4><p>Earn a verified certificate for LinkedIn instantly.</p></div><div class="vcard" data-reveal><div class="vcard-icon-wrap purple-wrap"><div class="vcard-icon">🤝</div></div><h4>Mentorship</h4><p>Guided by experienced professionals every step.</p></div></div></div></div></section>
+
+  <!-- ========== HOW IT WORKS ========== -->
+  <section class="howworks" id="howworks"><div class="container"><div class="section-tag" data-reveal>The Process</div><h2 class="section-title" data-reveal>How It <span class="gold">Works</span></h2><p class="section-sub" data-reveal>From signup to certificate in just 30 days — here's your journey.</p><div class="steps-grid"><div class="step-card" data-reveal><div class="step-num">01</div><div class="step-icon">📝</div><h3>Apply Free</h3><p>Fill out the form with your details and choose your domain.</p><div class="step-connector"></div></div><div class="step-card" data-reveal><div class="step-num">02</div><div class="step-icon">✅</div><h3>Get Selected</h3><p>Team reviews and sends welcome email within 24 hours.</p><div class="step-connector"></div></div><div class="step-card" data-reveal><div class="step-num">03</div><div class="step-icon">🚀</div><h3>Start Building</h3><p>Work on real tasks daily with mentor support.</p><div class="step-connector"></div></div><div class="step-card" data-reveal><div class="step-num">04</div><div class="step-icon">🏆</div><h3>Get Certified</h3><p>Complete program, receive verified certificate.</p></div></div></div></section>
+
+  <!-- ========== TRACKS ========== -->
+  <section class="internship" id="internship"><div class="container"><div class="section-tag" data-reveal>Our Programs</div><h2 class="section-title" data-reveal>Choose Your <span class="gold">Domain</span></h2><p class="section-sub" data-reveal>Six specialized domains designed to give you real startup experience.</p><div class="track-filters" data-reveal><button class="filter-btn active" data-filter="all">All Tracks</button><button class="filter-btn" data-filter="tech">Tech</button><button class="filter-btn" data-filter="design">Design</button><button class="filter-btn" data-filter="marketing">Marketing</button></div><div class="tracks-grid"><div class="track-card" data-reveal data-category="tech"><div class="track-header blue-bg"><div class="track-emoji">🤖</div><h3>AI Intern</h3><div class="track-badge hot-badge">🔥 Most Popular</div></div><div class="track-body"><ul><li><i class='bx bx-check'></i> Generative AI & Prompt Engineering</li><li><i class='bx bx-check'></i> AI Tools for Businesses</li><li><i class='bx bx-check'></i> Content Creation with AI</li><li><i class='bx bx-check'></i> Real startup AI tasks</li></ul><div class="track-meta"><span><i class='bx bx-time'></i> 30 Days</span><span><i class='bx bx-graduation'></i> All Levels</span></div><a href="#cta" class="btn btn-primary track-btn">Apply for AI Track →</a></div></div><div class="track-card" data-reveal data-category="tech"><div class="track-header dark-bg"><div class="track-emoji">📊</div><h3>Data Science Intern</h3></div><div class="track-body"><ul><li><i class='bx bx-check'></i> Data Cleaning & Analysis</li><li><i class='bx bx-check'></i> Visualization with Charts</li><li><i class='bx bx-check'></i> Insight Generation</li><li><i class='bx bx-check'></i> Public dataset projects</li></ul><div class="track-meta"><span><i class='bx bx-time'></i> 30 Days</span><span><i class='bx bx-graduation'></i> Beginner Friendly</span></div><a href="#cta" class="btn btn-primary track-btn">Apply for Data Track →</a></div></div><div class="track-card" data-reveal data-category="tech"><div class="track-header gold-bg"><div class="track-emoji">💻</div><h3>Web Dev Intern</h3></div><div class="track-body"><ul><li><i class='bx bx-check'></i> HTML, CSS & JavaScript</li><li><i class='bx bx-check'></i> Responsive Design</li><li><i class='bx bx-check'></i> Build Real Webpages</li><li><i class='bx bx-check'></i> GitHub & Deployment</li></ul><div class="track-meta"><span><i class='bx bx-time'></i> 30 Days</span><span><i class='bx bx-graduation'></i> Beginner to Mid</span></div><a href="#cta" class="btn btn-primary track-btn">Apply for Web Track →</a></div></div><div class="track-card" data-reveal data-category="marketing"><div class="track-header green-bg"><div class="track-emoji">📱</div><h3>Digital Marketing</h3></div><div class="track-body"><ul><li><i class='bx bx-check'></i> Social Media Strategy</li><li><i class='bx bx-check'></i> SEO & Content Marketing</li><li><i class='bx bx-check'></i> Email Campaigns</li><li><i class='bx bx-check'></i> Growth Hacking</li></ul><div class="track-meta"><span><i class='bx bx-time'></i> 30 Days</span><span><i class='bx bx-graduation'></i> All Levels</span></div><a href="#cta" class="btn btn-primary track-btn">Apply for Marketing →</a></div></div><div class="track-card" data-reveal data-category="design"><div class="track-header purple-bg"><div class="track-emoji">🎨</div><h3>UI/UX Design</h3></div><div class="track-body"><ul><li><i class='bx bx-check'></i> Figma & Design Tools</li><li><i class='bx bx-check'></i> User Research & Wireframes</li><li><i class='bx bx-check'></i> Prototyping & Testing</li><li><i class='bx bx-check'></i> Real app design tasks</li></ul><div class="track-meta"><span><i class='bx bx-time'></i> 30 Days</span><span><i class='bx bx-graduation'></i> Creative Minds</span></div><a href="#cta" class="btn btn-primary track-btn">Apply for UI/UX →</a></div></div><div class="track-card" data-reveal data-category="tech"><div class="track-header teal-bg"><div class="track-emoji">☁️</div><h3>Cloud & DevOps</h3></div><div class="track-body"><ul><li><i class='bx bx-check'></i> AWS / GCP Basics</li><li><i class='bx bx-check'></i> Docker & Containers</li><li><i class='bx bx-check'></i> CI/CD Pipelines</li><li><i class='bx bx-check'></i> Deploy real apps</li></ul><div class="track-meta"><span><i class='bx bx-time'></i> 30 Days</span><span><i class='bx bx-graduation'></i> Intermediate</span></div><a href="#cta" class="btn btn-primary track-btn">Apply for DevOps →</a></div></div></div><div class="section-cta" data-reveal><p class="urgency-text">🚀 Limited Seats Available — Don't Miss Out!</p><a href="#cta" class="btn btn-primary btn-lg">Start Learning Today →</a></div></div></section>
 
   <!-- ========== TESTIMONIALS ========== -->
-  <section class="testimonials" id="testimonials">
-    <div class="container">
-      <div class="section-tag" data-reveal>Student Reviews</div>
-      <h2 class="section-title" data-reveal>What Our <span class="gold">Interns Say</span></h2>
-      <p class="section-sub" data-reveal>Real students. Real experience. Real results.</p>
-      <div class="testimonials-grid">
-        <div class="tcard" data-reveal>
-          <div class="tcard-stars">⭐⭐⭐⭐⭐</div>
-          <p class="tcard-quote">"WeIntern gave me real startup tasks on Day 1. I built an actual website for my portfolio. This is not like other internships where you just watch videos."</p>
-          <div class="tcard-author"><div class="tcard-avatar">R</div><div><div class="tcard-name">Rahul Sharma</div><div class="tcard-role">Web Dev Intern · Delhi</div></div></div>
-        </div>
-        <div class="tcard featured-tcard" data-reveal>
-          <div class="tcard-stars">⭐⭐⭐⭐⭐</div>
-          <p class="tcard-quote">"The AI Intern track taught me prompt engineering and AI tools for business — skills in huge demand right now. Got a job offer within 2 weeks of completing my certificate!"</p>
-          <div class="tcard-author"><div class="tcard-avatar gold-avatar">P</div><div><div class="tcard-name">Priya Patel</div><div class="tcard-role">AI Intern · Mumbai</div></div></div>
-        </div>
-        <div class="tcard" data-reveal>
-          <div class="tcard-stars">⭐⭐⭐⭐⭐</div>
-          <p class="tcard-quote">"Data Science track was perfect for me. I worked on a real Kaggle dataset, created charts, and got a certificate. Mentors were super helpful on WhatsApp."</p>
-          <div class="tcard-author"><div class="tcard-avatar blue-avatar">A</div><div><div class="tcard-name">Arjun Nair</div><div class="tcard-role">Data Science Intern · Bangalore</div></div></div>
-        </div>
-      </div>
-      <div class="section-cta" data-reveal>
-        <a href="#cta" class="btn btn-primary">Join 500+ Students →</a>
-      </div>
-    </div>
-  </section>
+  <section class="testimonials" id="testimonials"><div class="container"><div class="section-tag" data-reveal>Student Reviews</div><h2 class="section-title" data-reveal>What Our <span class="gold">Interns Say</span></h2><div class="testimonials-grid"><div class="tcard" data-reveal><div class="tcard-stars">⭐⭐⭐⭐⭐</div><p class="tcard-quote">"WeIntern gave me real startup tasks on Day 1. I built an actual website for my portfolio. This is not like other internships."</p><div class="tcard-author"><div class="tcard-avatar">R</div><div><div class="tcard-name">Rahul Sharma</div><div class="tcard-role">Web Dev Intern · Delhi</div></div></div></div><div class="tcard featured-tcard" data-reveal><div class="featured-label">⭐ Featured</div><div class="tcard-stars">⭐⭐⭐⭐⭐</div><p class="tcard-quote">"The AI Intern track taught me prompt engineering — skills in huge demand. Got a job offer within 2 weeks of completing my certificate!"</p><div class="tcard-author"><div class="tcard-avatar gold-avatar">P</div><div><div class="tcard-name">Priya Patel</div><div class="tcard-role">AI Intern · Mumbai</div></div></div></div><div class="tcard" data-reveal><div class="tcard-stars">⭐⭐⭐⭐⭐</div><p class="tcard-quote">"Data Science track was perfect. Worked on a real Kaggle dataset, created charts, got a certificate. Mentors were super helpful."</p><div class="tcard-author"><div class="tcard-avatar blue-avatar">A</div><div><div class="tcard-name">Arjun Nair</div><div class="tcard-role">Data Science Intern · Bangalore</div></div></div></div></div><div class="stats-bar" data-reveal><div class="sbar-item"><span class="sbar-num">500+</span><span class="sbar-label">Happy Interns</span></div><div class="sbar-divider"></div><div class="sbar-item"><span class="sbar-num">4.9★</span><span class="sbar-label">Average Rating</span></div><div class="sbar-divider"></div><div class="sbar-item"><span class="sbar-num">6</span><span class="sbar-label">Live Domains</span></div><div class="sbar-divider"></div><div class="sbar-item"><span class="sbar-num">30</span><span class="sbar-label">Days to Certificate</span></div></div></div></section>
 
-  <!-- ========== SKILLS / TECH STACK ========== -->
-  <section class="skills" id="skills">
-    <div class="container">
-      <div class="section-tag" data-reveal>Tech Stack</div>
-      <h2 class="section-title" data-reveal>Skills You'll <span class="gold">Master</span></h2>
-      <p class="section-sub" data-reveal>Industry-relevant technologies used by top startups worldwide.</p>
-      <div class="skills-grid">
-        <div class="skill-item" data-reveal><i class='bx bxl-html5'></i><span>HTML5</span></div>
-        <div class="skill-item" data-reveal><i class='bx bxl-css3'></i><span>CSS3</span></div>
-        <div class="skill-item" data-reveal><i class='bx bxl-javascript'></i><span>JavaScript</span></div>
-        <div class="skill-item" data-reveal><i class='bx bxl-react'></i><span>React</span></div>
-        <div class="skill-item" data-reveal><i class='bx bxl-python'></i><span>Python</span></div>
-        <div class="skill-item" data-reveal><i class='bx bxl-github'></i><span>GitHub</span></div>
-        <div class="skill-item" data-reveal><i class='bx bxl-figma'></i><span>Figma</span></div>
-        <div class="skill-item" data-reveal><i class='bx bxl-nodejs'></i><span>Node.js</span></div>
-        <div class="skill-item" data-reveal><i class='bx bxs-data'></i><span>Data Science</span></div>
-        <div class="skill-item" data-reveal><i class='bx bx-brain'></i><span>AI / GenAI</span></div>
-        <div class="skill-item" data-reveal><i class='bx bxl-tailwind-css'></i><span>Tailwind</span></div>
-        <div class="skill-item" data-reveal><i class='bx bxl-google-cloud'></i><span>Cloud</span></div>
-      </div>
-      <div class="section-cta" data-reveal>
-        <a href="#cta" class="btn btn-primary">Learn These Skills Free →</a>
-      </div>
-    </div>
-  </section>
+  <!-- ========== SKILLS ========== -->
+  <section class="skills" id="skills"><div class="container"><div class="section-tag" data-reveal>Tech Stack</div><h2 class="section-title" data-reveal>Skills You'll <span class="gold">Master</span></h2><div class="skills-grid"><div class="skill-item" data-reveal><i class='bx bxl-html5'></i><span>HTML5</span></div><div class="skill-item" data-reveal><i class='bx bxl-css3'></i><span>CSS3</span></div><div class="skill-item" data-reveal><i class='bx bxl-javascript'></i><span>JavaScript</span></div><div class="skill-item" data-reveal><i class='bx bxl-react'></i><span>React</span></div><div class="skill-item" data-reveal><i class='bx bxl-python'></i><span>Python</span></div><div class="skill-item" data-reveal><i class='bx bxl-github'></i><span>GitHub</span></div><div class="skill-item" data-reveal><i class='bx bxl-figma'></i><span>Figma</span></div><div class="skill-item" data-reveal><i class='bx bxl-nodejs'></i><span>Node.js</span></div><div class="skill-item" data-reveal><i class='bx bxs-data'></i><span>Data Science</span></div><div class="skill-item" data-reveal><i class='bx bx-brain'></i><span>AI / GenAI</span></div><div class="skill-item" data-reveal><i class='bx bxl-tailwind-css'></i><span>Tailwind</span></div><div class="skill-item" data-reveal><i class='bx bxl-google-cloud'></i><span>Cloud</span></div></div><div class="section-cta" data-reveal><a href="#cta" class="btn btn-primary">Learn These Skills Free →</a></div></div></section>
 
-  <!-- ========== CONTACT FORM (Task 2) ========== -->
-  <section class="contact" id="contact">
-    <div class="container">
-      <div class="section-tag" data-reveal>Get In Touch</div>
-      <h2 class="section-title" data-reveal>Have a <span class="gold">Question?</span></h2>
-      <p class="section-sub" data-reveal>Fill out the form below and our team will get back to you within 24 hours.</p>
-      <div class="contact-grid">
-        <div class="contact-info" data-reveal>
-          <div class="cinfo-item"><i class='bx bx-envelope'></i><div><h4>Email Us</h4><p>hello@weintern.in</p></div></div>
-          <div class="cinfo-item"><i class='bx bxl-whatsapp'></i><div><h4>WhatsApp</h4><p>Chat with our team</p></div></div>
-          <div class="cinfo-item"><i class='bx bx-globe'></i><div><h4>Website</h4><p>weintern.in</p></div></div>
-          <div class="cinfo-item"><i class='bx bx-time'></i><div><h4>Response Time</h4><p>Within 24 hours</p></div></div>
-        </div>
-        <div class="contact-form-wrap" data-reveal>
-          <form class="contact-form" id="contact-form" novalidate>
-            <div class="form-row">
-              <div class="form-group">
-                <label for="c-name">Full Name <span class="req">*</span></label>
-                <input type="text" id="c-name" name="name" placeholder="e.g. Gaurav Kumar" maxlength="60" autocomplete="name" />
-                <span class="field-error" id="err-name"></span>
-                <span class="char-count" id="count-name">0 / 60</span>
-              </div>
-              <div class="form-group">
-                <label for="c-email">Email Address <span class="req">*</span></label>
-                <input type="email" id="c-email" name="email" placeholder="you@email.com" autocomplete="email" />
-                <span class="field-error" id="err-email"></span>
-              </div>
-            </div>
-            <div class="form-group">
-              <label for="c-domain">Interested Domain <span class="req">*</span></label>
-              <select id="c-domain" name="domain">
-                <option value="" disabled selected>Select a domain</option>
-                <option value="ai">AI Intern</option>
-                <option value="data">Data Science Intern</option>
-                <option value="webdev">Full Stack Web Dev Intern</option>
-                <option value="marketing">Digital Marketing Intern</option>
-                <option value="uiux">UI/UX Design Intern</option>
-                <option value="devops">Cloud & DevOps Intern</option>
-              </select>
-              <span class="field-error" id="err-domain"></span>
-            </div>
-            <div class="form-group">
-              <label for="c-message">Message <span class="req">*</span></label>
-              <textarea id="c-message" name="message" rows="5" placeholder="Tell us about yourself, your background, and why you want to join WeIntern..." maxlength="500"></textarea>
-              <span class="field-error" id="err-message"></span>
-              <span class="char-count" id="count-message">0 / 500</span>
-            </div>
-            <button type="submit" class="btn btn-primary contact-submit" id="contact-submit">
-              <span class="btn-text">Send Message →</span>
-              <span class="btn-loader" style="display:none">Sending...</span>
-            </button>
-          </form>
-          <div class="contact-success" id="contact-success">
-            <div class="success-icon">✅</div>
-            <h3>Message Sent!</h3>
-            <p>Thanks for reaching out! Our team will get back to you within 24 hours.</p>
-            <button class="btn btn-primary" id="reset-form">Send Another Message</button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+  <!-- ========== FAQ ========== -->
+  <section class="faq" id="faq"><div class="container"><div class="section-tag" data-reveal>FAQ</div><h2 class="section-title" data-reveal>Frequently Asked <span class="gold">Questions</span></h2><div class="faq-grid"><div class="faq-item" data-reveal><button class="faq-q" aria-expanded="false">Is WeIntern completely free?<i class='bx bx-chevron-down faq-icon'></i></button><div class="faq-a"><p>Yes! WeIntern is 100% free for the first 50 students in each batch. No hidden fees.</p></div></div><div class="faq-item" data-reveal><button class="faq-q" aria-expanded="false">Do I need prior experience?<i class='bx bx-chevron-down faq-icon'></i></button><div class="faq-a"><p>Not at all! Our programs are designed for beginners. We start from basics.</p></div></div><div class="faq-item" data-reveal><button class="faq-q" aria-expanded="false">How long is the internship?<i class='bx bx-chevron-down faq-icon'></i></button><div class="faq-a"><p>All tracks are 30 days long with daily tasks and mentor guidance.</p></div></div><div class="faq-item" data-reveal><button class="faq-q" aria-expanded="false">Will I get a certificate?<i class='bx bx-chevron-down faq-icon'></i></button><div class="faq-a"><p>Absolutely! You'll receive a verified digital certificate for LinkedIn.</p></div></div><div class="faq-item" data-reveal><button class="faq-q" aria-expanded="false">Can I do this alongside college?<i class='bx bx-chevron-down faq-icon'></i></button><div class="faq-a"><p>Yes! Flexible schedule — complete daily tasks at your own pace.</p></div></div><div class="faq-item" data-reveal><button class="faq-q" aria-expanded="false">Which domain should I choose?<i class='bx bx-chevron-down faq-icon'></i></button><div class="faq-a"><p>Choose based on interest: AI, Data, Web Dev, Marketing, UI/UX, or DevOps.</p></div></div></div></div></section>
+
+  <!-- ========== CONTACT ========== -->
+  <section class="contact" id="contact"><div class="container"><div class="section-tag" data-reveal>Get In Touch</div><h2 class="section-title" data-reveal>Have a <span class="gold">Question?</span></h2><div class="contact-grid"><div class="contact-info" data-reveal><div class="cinfo-item"><div class="cinfo-icon"><i class='bx bx-envelope'></i></div><div><h4>Email Us</h4><p>hello@weintern.in</p></div></div><div class="cinfo-item"><div class="cinfo-icon"><i class='bx bxl-whatsapp'></i></div><div><h4>WhatsApp</h4><p>Chat with our team</p></div></div><div class="cinfo-item"><div class="cinfo-icon"><i class='bx bx-globe'></i></div><div><h4>Website</h4><p>weintern.in</p></div></div><div class="live-status"><span class="live-dot"></span><span>Team is online — we respond fast!</span></div></div><div class="contact-form-wrap" data-reveal><form class="contact-form" id="contact-form" novalidate><div class="form-row"><div class="form-group"><label for="c-name">Full Name <span class="req">*</span></label><input type="text" id="c-name" placeholder="e.g. Gaurav Kumar"><span class="field-error" id="err-name"></span><span class="char-count" id="count-name">0 / 60</span></div><div class="form-group"><label for="c-email">Email <span class="req">*</span></label><input type="email" id="c-email" placeholder="you@email.com"><span class="field-error" id="err-email"></span></div></div><div class="form-group"><label for="c-domain">Interested Domain <span class="req">*</span></label><select id="c-domain"><option value="" disabled selected>Select a domain</option><option value="ai">AI Intern</option><option value="data">Data Science</option><option value="webdev">Web Dev</option><option value="marketing">Digital Marketing</option><option value="uiux">UI/UX Design</option><option value="devops">Cloud & DevOps</option></select><span class="field-error" id="err-domain"></span></div><div class="form-group"><label for="c-message">Message <span class="req">*</span></label><textarea id="c-message" rows="4" placeholder="Tell us about yourself..." maxlength="500"></textarea><span class="field-error" id="err-message"></span><span class="char-count" id="count-message">0 / 500</span></div><button type="submit" class="btn btn-primary contact-submit" id="contact-submit"><span class="btn-text">Send Message →</span><span class="btn-loader" style="display:none"><i class='bx bx-loader-alt bx-spin'></i> Sending...</span></button></form><div class="contact-success" id="contact-success"><div class="success-icon">✅</div><h3>Message Sent!</h3><p>Thanks for reaching out! Our team will get back to you within 24 hours.</p><button class="btn btn-primary" id="reset-form">Send Another Message</button></div></div></div></div></section>
 
   <!-- ========== CTA SECTION ========== -->
-  <section class="cta-section" id="cta">
-    <div class="cta-shapes"><div class="cta-shape c1"></div><div class="cta-shape c2"></div></div>
-    <div class="container cta-inner">
-      <div class="cta-urgency" data-reveal>🔥 Only a Few Seats Remaining — Apply Before It's Full!</div>
-      <h2 data-reveal>Ready to Start Your <span class="gold">Internship Journey?</span></h2>
-      <p data-reveal>Join hundreds of students building real skills and careers at WeIntern. <b>Free for the first 50 students.</b></p>
-      <form class="apply-form" id="apply-form" data-reveal>
-        <input type="text"   id="name"  placeholder="Your Full Name"     required />
-        <input type="email"  id="email" placeholder="Your Email Address" required />
-        <select id="track" required>
-          <option value="" disabled selected>Select Your Track</option>
-          <option value="ai">AI Intern</option>
-          <option value="data">Data Science Intern</option>
-          <option value="webdev">Full Stack Web Dev Intern</option>
-          <option value="marketing">Digital Marketing Intern</option>
-          <option value="uiux">UI/UX Design Intern</option>
-          <option value="devops">Cloud & DevOps Intern</option>
-        </select>
-        <button type="submit" class="btn btn-primary cta-submit">Apply Now — It's Free →</button>
-        <p class="form-note">🔒 No spam. We'll only send you internship details.</p>
-      </form>
-      <div class="success-msg" id="success-msg">🎉 Amazing! You're in. We'll reach out within 24 hours. Welcome to WeIntern!</div>
-    </div>
-  </section>
+  <section class="cta-section" id="cta"><div class="cta-shapes"><div class="cta-shape c1"></div><div class="cta-shape c2"></div></div><div class="container cta-inner"><div class="cta-urgency" data-reveal>🔥 Only a Few Seats Remaining — Apply Before It's Full!</div><h2 data-reveal>Ready to Start Your <span class="gold">Internship Journey?</span></h2><p data-reveal>Join hundreds of students building real skills and careers at WeIntern. <b>Free for the first 50 students.</b></p><form class="apply-form" id="apply-form" data-reveal novalidate><div class="apply-row"><input type="text" id="ap-name" placeholder="Your Full Name" required><input type="email" id="ap-email" placeholder="Your Email Address" required></div><select id="ap-track" required><option value="" disabled selected>Select Your Track</option><option value="ai">AI Intern</option><option value="data">Data Science</option><option value="webdev">Web Dev</option><option value="marketing">Digital Marketing</option><option value="uiux">UI/UX Design</option><option value="devops">Cloud & DevOps</option></select><button type="submit" class="btn btn-primary cta-submit pulse">Apply Now — It's Free →</button><p class="form-note">🔒 No spam. We'll only send you internship details.</p></form><div class="success-msg" id="success-msg">🎉 Amazing! You're in. We'll reach out within 24 hours. Welcome to WeIntern!</div></div></section>
 
   <!-- ========== FOOTER ========== -->
-  <footer class="footer" id="footer">
-    <div class="container footer-inner">
-      <div class="footer-top">
-        <div class="footer-brand">
-          <div class="footer-logo">
-            <img src="image.png" alt="WeIntern Logo" class="footer-logo-img"
-                 onerror="this.style.display='none';document.getElementById('footer-logo-text').style.display='inline-block'" />
-            <span id="footer-logo-text" class="logo-text">We<span class="gold">Intern</span></span>
-          </div>
-          <p class="footer-about">Empowering students with real-world startup experience, practical skills, and career opportunities across India.</p>
-          <div class="footer-social">
-            <a href="#" class="social-btn" aria-label="LinkedIn"><i class='bx bxl-linkedin'></i></a>
-            <a href="#" class="social-btn" aria-label="Instagram"><i class='bx bxl-instagram'></i></a>
-            <a href="#" class="social-btn" aria-label="Twitter"><i class='bx bxl-twitter'></i></a>
-            <a href="#" class="social-btn" aria-label="YouTube"><i class='bx bxl-youtube'></i></a>
-          </div>
-        </div>
-        <div class="footer-links-group">
-          <h4>Quick Links</h4>
-          <ul>
-            <li><a href="#hero">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#internship">Tracks</a></li>
-            <li><a href="#testimonials">Reviews</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li><a href="#cta">Apply Now</a></li>
-          </ul>
-        </div>
-        <div class="footer-links-group">
-          <h4>Programs</h4>
-          <ul>
-            <li><a href="#internship">AI Intern</a></li>
-            <li><a href="#internship">Data Science</a></li>
-            <li><a href="#internship">Web Dev</a></li>
-            <li><a href="#internship">Digital Marketing</a></li>
-            <li><a href="#internship">UI/UX Design</a></li>
-            <li><a href="#internship">Cloud & DevOps</a></li>
-          </ul>
-        </div>
-        <div class="footer-links-group">
-          <h4>Contact</h4>
-          <ul>
-            <li><a href="mailto:hello@weintern.in">hello@weintern.in</a></li>
-            <li><a href="#">weintern.in</a></li>
-            <li><a href="#">WhatsApp Us</a></li>
-          </ul>
-          <div class="footer-cta-small">
-            <a href="#cta" class="btn btn-primary" style="font-size:0.82rem;padding:10px 18px;">Join WeIntern →</a>
-          </div>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <p>© 2026 WeIntern IT Services Pvt. Ltd. All Rights Reserved.</p>
-        <p>Made with ❤️ for students across India</p>
-      </div>
-    </div>
-  </footer>
+  <footer class="footer"><div class="container footer-inner"><div class="footer-top"><div class="footer-brand"><div class="footer-logo"><span class="logo-text" style="font-size:1.5rem;">We<span class="gold">Intern</span></span></div><p class="footer-about">Empowering students with real-world startup experience, practical skills, and career opportunities across India.</p><div class="footer-social"><a href="#" class="social-btn"><i class='bx bxl-linkedin'></i></a><a href="#" class="social-btn"><i class='bx bxl-instagram'></i></a><a href="#" class="social-btn"><i class='bx bxl-twitter'></i></a></div></div><div class="footer-links-group"><h4>Quick Links</h4><ul><li><a href="#hero">Home</a></li><li><a href="#about">About</a></li><li><a href="#internship">Tracks</a></li><li><a href="#testimonials">Reviews</a></li><li><a href="#faq">FAQ</a></li></ul></div><div class="footer-links-group"><h4>Programs</h4><ul><li><a href="#internship">AI Intern</a></li><li><a href="#internship">Data Science</a></li><li><a href="#internship">Web Dev</a></li><li><a href="#internship">Digital Marketing</a></li><li><a href="#internship">UI/UX Design</a></li></ul></div><div class="footer-links-group"><h4>Contact</h4><ul><li><a href="mailto:hello@weintern.in">hello@weintern.in</a></li><li><a href="#">weintern.in</a></li></ul><div class="footer-cta-small"><a href="#cta" class="btn btn-primary" style="font-size:0.82rem;padding:10px 18px;">Join WeIntern →</a></div></div></div><div class="footer-bottom"><p>© 2026 WeIntern IT Services Pvt. Ltd. All Rights Reserved.</p><p>Made with ❤️ for students across India</p></div></div></footer>
 
-  <!-- Back to top button (micro-interaction from startup research) -->
-  <button class="back-to-top" id="back-to-top" aria-label="Back to top">
-    <i class='bx bx-chevron-up'></i>
-  </button>
+  <button class="back-to-top" id="back-to-top" aria-label="Back to top"><i class='bx bx-chevron-up'></i></button>
 
   <script src="script.js"></script>
 </body>
